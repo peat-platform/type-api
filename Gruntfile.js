@@ -85,15 +85,13 @@ module.exports = function(grunt) {
 
     });
 
-  // These plugins provide necessary tasks.
+  /// These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-testem');
   grunt.loadNpmTasks('grunt-qunit-cov');
   grunt.loadNpmTasks('grunt-plato');
-  grunt.loadNpmTasks('grunt-node-tap');
   grunt.loadNpmTasks('grunt-istanbul');
   grunt.loadNpmTasks('grunt-istanbul-coverage');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
@@ -101,7 +99,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-config');
 
   // Default task(s).
-
   grunt.registerTask('test',     ['nodeunit']);
   grunt.registerTask('cover',    ['clean:build', 'instrument', 'nodeunit', 'storeCoverage', 'makeReport']);
   grunt.registerTask('default',  ['required',    'jshint',     'nodeunit' ]);
