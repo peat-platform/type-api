@@ -28,10 +28,10 @@
       "test": "grunt nodeunit"
    },
    "dependencies": {
-      "m2nodehandler"          : "git+ssh://git@github.com:OPENi-ict/m2nodehandler.git#master",
-      "dbc"                    : "git+ssh://git@github.com:OPENi-ict/dbc.git#master",
-      "openi-logger"           : "git+ssh://git@github.com:OPENi-ict/openi-logger.git#master",
-      "openi-cloudlet-utils"   : "git+ssh://git@github.com:OPENi-ict/cloudlet-utils.git#master"
+      "m2nodehandler"          : "git+https://github.com/OPENi-ict/m2nodehandler.git#master",
+      "dbc"                    : "git+https://github.com/OPENi-ict/dbc.git#master",
+      "openi-logger"           : "git+https://github.com/OPENi-ict/openi-logger.git#master",
+      "openi-cloudlet-utils"   : "git+https://github.com/OPENi-ict/cloudlet-utils.git#master"
       
    },
    "devDependencies": {
