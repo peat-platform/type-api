@@ -3,7 +3,7 @@
 The Cloudlet Platforms type_api component manages users Cloudlet Platform. It supports create, delete, and read of Cloudlets.
 
 ## Getting Started
-Install the module with: `npm install git+ssh://git@gitlab.openi-ict.eu:type_api.git`
+Install the module with: `npm install git+ssh://git@github.com:OPENi-ict/type_api.git`
 
 You will need to install the following through macports or aptitude.
 
