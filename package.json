@@ -19,10 +19,11 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "m2nodehandler": "OPENi-ict/m2nodehandler",
     "dbc": "OPENi-ict/dbc",
-    "openi-logger": "OPENi-ict/openi-logger",
-    "openi-cloudlet-utils": "OPENi-ict/cloudlet-utils"
+    "loglet": "git://github.com/OPENi-ict/loglet",
+    "m2nodehandler": "OPENi-ict/m2nodehandler",
+    "openi-cloudlet-utils": "OPENi-ict/cloudlet-utils",
+    "openi-logger": "OPENi-ict/openi-logger"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
