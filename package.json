@@ -23,6 +23,7 @@
     "loglet": "git://github.com/OPENi-ict/loglet",
     "m2nodehandler": "OPENi-ict/m2nodehandler",
     "openi-cloudlet-utils": "OPENi-ict/cloudlet-utils",
+     "openi_rrd": "OPENi-ict/openi_rrd",
     "openi-logger": "OPENi-ict/openi-logger"
   },
   "devDependencies": {
