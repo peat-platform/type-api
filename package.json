@@ -1,15 +1,15 @@
 {
   "name": "type_api",
-  "description": "OPENi Type API for the OPENi Cloudlet Platform",
+  "description": "OPENi Type API for the PEAT Cloudlet Platform",
   "version": "0.1.0",
-  "homepage": "openi-ict.eu",
+  "homepage": "peat-platform.org",
   "author": {
     "name": "dmccarthy",
     "email": "dmccarthy@tssg.org"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:OPENi-ict/type-api.git"
+    "url": "git@github.com:peat-platform/type-api.git"
   },
   "main": "lib/main",
   "engines": {
@@ -19,12 +19,12 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "dbc": "OPENi-ict/dbc",
-    "loglet": "git://github.com/OPENi-ict/loglet",
-    "m2nodehandler": "OPENi-ict/m2nodehandler",
-    "openi-cloudlet-utils": "OPENi-ict/cloudlet-utils",
-     "openi_rrd": "OPENi-ict/openi_rrd",
-    "openi-logger": "OPENi-ict/openi-logger"
+    "dbc": "peat-platform/dbc",
+    "loglet": "git://github.com/peat-platform/loglet",
+    "m2nodehandler": "peat-platform/m2nodehandler",
+    "openi-cloudlet-utils": "peat-platform/cloudlet-utils",
+     "openi_rrd": "peat-platform/openi_rrd",
+    "openi-logger": "peat-platform/openi-logger"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
