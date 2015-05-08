@@ -22,9 +22,9 @@
     "dbc": "peat-platform/dbc",
     "loglet": "git://github.com/peat-platform/loglet",
     "m2nodehandler": "peat-platform/m2nodehandler",
-    "openi-cloudlet-utils": "peat-platform/cloudlet-utils",
+    "cloudlet-utils": "peat-platform/cloudlet-utils",
      "openi_rrd": "peat-platform/openi_rrd",
-    "openi-logger": "peat-platform/openi-logger"
+    "peat-logger": "peat-platform/peat-logger"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
