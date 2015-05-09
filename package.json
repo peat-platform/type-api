@@ -23,7 +23,7 @@
     "loglet": "git://github.com/peat-platform/loglet",
     "m2nodehandler": "peat-platform/m2nodehandler",
     "cloudlet-utils": "peat-platform/cloudlet-utils",
-     "openi_rrd": "peat-platform/openi_rrd",
+     "peat-rrd": "peat-platform/peat-rrd",
     "peat-logger": "peat-platform/peat-logger"
   },
   "devDependencies": {
