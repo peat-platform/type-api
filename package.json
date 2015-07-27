@@ -19,12 +19,12 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "dbc": "peat-platform/dbc",
-    "loglet": "git://github.com/peat-platform/loglet",
-    "m2nodehandler": "peat-platform/m2nodehandler",
-    "cloudlet-utils": "peat-platform/cloudlet-utils",
-     "peat-rrd": "peat-platform/peat-rrd",
-    "peat-logger": "peat-platform/peat-logger"
+    "dbc": "peat-platform/dbc#finalOPENiMerge",
+    "loglet": "git://github.com/peat-platform/loglet#finalOPENiMerge",
+    "m2nodehandler": "peat-platform/m2nodehandler#finalOPENiMerge",
+    "cloudlet-utils": "peat-platform/cloudlet-utils#finalOPENiMerge",
+     "peat-rrd": "peat-platform/peat-rrd#finalOPENiMerge",
+    "peat-logger": "peat-platform/peat-logger#finalOPENiMerge"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
