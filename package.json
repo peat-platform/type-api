@@ -20,9 +20,9 @@
   },
   "dependencies": {
     "loglet": "git://github.com/peat-platform/loglet#develop",
-    "m2nodehandler": "peat-platform/m2nodehandler#develop",
-    "cloudlet-utils": "peat-platform/cloudlet-utils#develop",
-    "peat-logger": "peat-platform/peat-logger#develop"
+    "m2nodehandler": "git://github.com/peat-platform/m2nodehandler#develop",
+    "cloudlet-utils": "git://github.com/peat-platform/cloudlet-utils#develop",
+    "peat-logger": "git://github.com/peat-platform/peat-logger#develop"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
