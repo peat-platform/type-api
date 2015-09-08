@@ -181,7 +181,7 @@ describe('Test Helper',function(){
       it('should return 400 status for Empty GET URL', function () {
          var cb = function(uuid,connid,status,headers,data){
             assert(400,status,"Status should be 400");
-            assert({'error' : 'Invalid type id' },data,"Error should be 'Empty body'")
+            assert('Invalid type id',data.error,"Error should be 'Empty body'")
          };
          try {
             helper.processMongrel2Message({ "headers" : {"METHOD" : "GET"}, "path" : ""}, null, mockClientSender(cb), null);
@@ -189,6 +189,52 @@ describe('Test Helper',function(){
             assert.isNull(e,"Should not throw Error");
          }
       });
+      it('should return daoAction array for GET Type URL', function () {
+         var cb = function(data){
+            assert.isNotNull(data.dao_actions,"Actions Should not be null");
+            assert('VIEW',data.dao_actions.action,"Action should be View")
+         };
+         try {
+            helper.processMongrel2Message({ "headers" : {"METHOD" : "GET", "URI" : "/api/v1/types?offset=0&limit=30", "QUERY":"offset=0&limit=30"}, "path" : "/api/v1/types"}, mockSender(cb), mockClientSender(cb), null);
+         }catch(e){
+            assert.isNull(e,"Should not throw Error");
+         }
+      });
+      it('should return daoAction array for GET TypeStats URL', function () {
+         var cb = function(data){
+            assert.isNotNull(data.dao_actions,"Actions Should not be null");
+            assert('VIEW',data.dao_actions.action,"Action should be View")
+         };
+         try {
+            helper.processMongrel2Message({ "headers" : {"METHOD" : "GET"}, "path" : "/api/v1/types/stats"}, mockSender(cb), mockClientSender(cb), null);
+         }catch(e){
+            assert.isNull(e,"Should not throw Error");
+         }
+      });
+      it('should return daoAction array for GET Generic Type URL', function () {
+         var cb = function(data){
+            assert.isNotNull(data.dao_actions,"Actions Should not be null");
+            assert('GET',data.dao_actions.action,"Action should be View")
+         };
+         try {
+            helper.processMongrel2Message({ "headers" : {"METHOD" : "GET"}, "path" : "/api/v1/types/t_5d94e8484c8d18aa243fc210a0fc395a-1334"}, mockSender(cb), mockClientSender(cb), null);
+         }catch(e){
+            assert.isNull(e,"Should not throw Error");
+         }
+      });
+
+      it('should return 400 status for Empty PATCH URL', function () {
+         var cb = function(uuid,connid,status,headers,data){
+            assert(400,status,"Status should be 400");
+            assert('Feature temporarily disabled',data.error,"Error should be 'Empty body'")
+         };
+         try {
+            helper.processMongrel2Message({ "headers" : {"METHOD" : "PATCH"}, "path" : ""}, null, mockClientSender(cb), null);
+         }catch(e){
+            assert.isNull(e,"Should not throw Error");
+         }
+      });
+
    });
 });
 
