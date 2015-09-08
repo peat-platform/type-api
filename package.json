@@ -19,17 +19,17 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "dbc": "peat-platform/dbc",
-    "loglet": "git://github.com/peat-platform/loglet",
-    "m2nodehandler": "peat-platform/m2nodehandler",
-    "cloudlet-utils": "peat-platform/cloudlet-utils",
-     "peat-rrd": "peat-platform/peat-rrd",
-    "peat-logger": "peat-platform/peat-logger"
+    "loglet": "git://github.com/peat-platform/loglet#develop",
+    "m2nodehandler": "peat-platform/m2nodehandler#develop",
+    "cloudlet-utils": "peat-platform/cloudlet-utils#develop",
+    "peat-logger": "peat-platform/peat-logger#develop"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "chai" : "3.1.0"
+
   },
   "keywords": []
 }
